@@ -11,6 +11,6 @@ public class ContatoTest {
         assertEquals("Joao",c1.getNome());
         assertEquals(5,c1.getDiaAniversario());
         assertEquals(10,c1.getMesAniversario());
-
     }
+
 }
