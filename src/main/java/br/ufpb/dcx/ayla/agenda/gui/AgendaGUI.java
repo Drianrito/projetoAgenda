@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,6 +22,7 @@ public class AgendaGUI extends JFrame {
         getContentPane().setLayout(new GridLayout(3,1));
         getContentPane().add(linha1);
         getContentPane().add(linha2);
+
     }
 
     public static void main(String[] args) {
