@@ -29,12 +29,13 @@ public class SistemaAgenda {
         } return aniversariantes;
     }
     public boolean removeContato(String nome){
-        for(Contato c: contatos.values()){
-            if(c.getNome().equals(nome)){
-                contatos.remove(nome, c);
-                return true;
-            }
-        } return false;
+       if(this.contatos.containsKey(nome)){
+           this.contatos.remove(nome);
+           return true;
+       }
+       else{
+           return false;
+       }
     }
 
     }

@@ -36,7 +36,7 @@ public class AgendaAyla implements Agenda {
     }
 
     @Override
-    public boolean removeContato(String nome) throws ContatoInexistenteException {
+    public boolean removeContato(String nome) {
         for(Contato c: contatos.values()){
             if(c.getNome().equals(nome)){
                 contatos.remove(nome, c);
