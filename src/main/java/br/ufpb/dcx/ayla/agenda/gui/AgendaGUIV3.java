@@ -22,12 +22,12 @@ public class AgendaGUIV3 extends JFrame{
     Agenda agenda = new AgendaAyla();
     public AgendaGUIV3(){
         setTitle("Agenda de Aniversario");
-        setSize(400, 800);
+        setSize(1000, 800);
         setLocation(150,150);
         setResizable(true);
         setBackground(Color.WHITE);
-        linha1 = new JLabel("Minha Agenda de Aniversario",JLabel.CENTER);
-        linha1.setFont(new Font("Serif",Font.BOLD,26));
+        linha1 = new JLabel("Minha Agenda",JLabel.CENTER);
+        linha1.setFont(new Font("Serif",Font.BOLD,30));
         linha2 = new JLabel(boloIm,JLabel.CENTER);
         botaoAdicionar = new JButton("Adicionar",addImg);
         botaoAdicionar.addActionListener(new AgendaAddController(agenda, this));
