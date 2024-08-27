@@ -2,6 +2,7 @@ package br.ufpb.dcx.ayla.agenda.gui;
 
 import br.ufpb.dcx.ayla.agenda.Agenda;
 import br.ufpb.dcx.ayla.agenda.AgendaAyla;
+import br.ufpb.dcx.ayla.agenda.controller.AgendaAddController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -30,7 +31,10 @@ public class AgendaGUIV3 extends JFrame{
         getContentPane().setLayout(new GridLayout(3,1));
         getContentPane().add(linha1);
         getContentPane().add(linha2);
-
+        botaoAdicionar = new JButton("Adicionar",addImg);
+        botaoAdicionar.addActionListener(new AgendaAddController(agenda, this));
+        botaoPesquisar = new JButton("Pesquisar",pesqImg);
+        botaoPesquisar.addActionListener(new AgendaSearchController(agenda, this));
     }
 
     public static void main(String[] args) {
