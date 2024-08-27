@@ -35,12 +35,15 @@ public class AgendaGUIV3 extends JFrame{
         botaoPesquisar.addActionListener(new AgendaSearchController(agenda, this));
         botaoRemover = new JButton("Remover", removeImg);
         botaoRemover.addActionListener(new AgendaRemoveController(agenda, this));
-        setLayout(new GridLayout(3,2));
-        add(linha1);
-        add(botaoAdicionar);
-        add(linha2);
-        add(botaoPesquisar);
+        setLayout(new GridLayout(3,3));
         add(new JLabel());
+        add(linha1);
+        add(new JLabel());
+        add(new JLabel());
+        add(linha2);
+        add(new JLabel());
+        add(botaoAdicionar);
+        add(botaoPesquisar);
         add(botaoRemover);
     }
 
